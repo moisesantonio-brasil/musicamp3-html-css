@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+     background-color: #1E1E4A;
 }
 
 .titulo {
@@ -16,11 +17,9 @@ body {
   flex-wrap: wrap;
 }
 .partedecima {
-    width: auto;
+    width: fit-content;
     height: 100px;
     background-color: #1E1E4A;
-    display: flex;
-    flex-wrap: wrap;
     margin: auto;
 }
 
@@ -36,6 +35,7 @@ body {
 .partedomeio {
     width: auto;
     height: auto;
+    margin-bottom: 50px;
     padding: 10px;
     background-color: #1A2349;
     display: flex;
@@ -43,64 +43,79 @@ body {
 }
 
 .basemusica {
-    width: 200px;
-    height: 280px;
+    width: 220px;
+    height: 340px;
     background-color: white;
     border-radius: 5px;
     cursor: pointer;
-    margin: auto;
+    margin:40px;
     margin-bottom: 50px;
 }
 
-.basemusica:hover {
-    background-color: rgb(228, 227, 227);
-}
+
 
 .imgmusica {
-    width: 180px;
-    height: 140px;
-    background-color: gray;
+    width: 200px;
+    height: 200px;
     margin: auto;
 }
 
 .titulomusica {
-   font-size:14px;
+   font-size:16px;
+   height: 50px;
+   background-color: tomato;
+   line-height: 25px;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .btnplay {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     border: none;
-    margin-left: 80px;
-    background-color: silver;
+    background-image: url("/imagens/play-music.png");
     cursor: pointer;
     font-size: 20px;
 }
 
-.btnplay:hover {
-    background-color: gray;
-    color: white;
-    font-size: 25px;
-    font-weight: bolder;
+.base-btn{
+    background-color: tomato;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+
+    border-radius: 50%;
+    width: 50px;
+    margin: auto;
+}
+.base-btn:hover{
+  
+   padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+      
 }
 
 .musicaplayer {
-  background-color: #272A39;
+  background-color:tomato;
     display: flex;
     flex-wrap: wrap;
-    position:sticky;
-    left: 0px;
-    bottom: 0px;
-    padding: 2px;
+    position:fixed;
+    left: 20%;
+    bottom: 0%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
 }
 
 .textomusica {
-    font-size:12px;
+    font-size:15px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .playerbase {
@@ -118,20 +133,19 @@ body {
 
 }
 
-hr {
-    margin-left: 10px;
-    margin-right: 20px;
-}
+
 
 .imgdamusica {
-    width: 100px;
-    height:auto;padding:2px;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    padding:2px;
     margin: 10px;
     border-radius: 5px;
     background-color: white;
     font-size: 13px;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-weight: bold;
 }
 
 .espaçocriado {
@@ -151,22 +165,29 @@ hr {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.voltarmsc,
-.seguirmsc {
-    width: 50px;
-    height: 30px;
-    margin-top: 25px;
-    margin-left: 20px;
-}
+
 
 .voltarmsc {
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 0px 20px 20px 0px;
+    width: 56px;
+    height: 56px;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
     border: none;
+    background-image: url("/imagens/btn.png");
+    transform: scaleX(-1);
+          
 }
 
 .seguirmsc {
     border-radius: 0px 20px 20px 0px;
-    border: none;
+    width: 56px;
+    height: 56px;
+       cursor: pointer;
+    margin-right: 20px;
+    background-image: url("/imagens/btn.png");
+    
 }
 
 .voltarmsc:hover {
@@ -180,34 +201,38 @@ hr {
 
 @media screen and (min-width:300px) {
   
-.imgdamusica{
-  margin: auto;
-  margin-top: 10px;padding:5px;
-  margin-bottom: 5px;
-}
-      .playerbase{
-    margin: auto;
-         
-      }
-      .partedomeio{
+.partedomeio{
         height: auto;
       }
-      hr{
+     
+      .logo2{
+        display: flex;
+      }
+      .imgdamusica{
         display: none;
       }
-      .voltarmsc,.seguirmsc{
-        width: 30px;
-        margin-top: 10px;
-        margin-left: 5px;
-        margin-bottom: 5px;
-margin-right: 15px;
+      .musicaplayer{
+        left:0%;
+        border-radius: 0px;
+        display: flex;
+        flex-wrap: nowrap;
+          width: 99%;
+    }
+    .playerbase{
+            width: 100%;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+      .voltarmsc{
+        margin-left: 0px;
+        margin-right: 4px;
       }
- .partedomeio{
-  overflow: hidden;
- }
+      .seguirmsc{
+        margin-right: 10px;
+      }
   }
   
-@media screen and (min-width:410px) {
+@media screen and (min-width:400px) {
       .partedomeio{
         height: auto;
       }
@@ -215,15 +240,235 @@ margin-right: 15px;
       .logo2{
         display: flex;
       }
+      .imgdamusica{
+        display: none;
+      }
+      .musicaplayer{
+        left:0%;
+        border-radius: 0px;
+        display: flex;
+        flex-wrap: nowrap;
+         width: 99%;
+    }
+    .playerbase{
+              width: 100%;
+        margin-left: 0px;
+    }
+      .voltarmsc{
+        margin-left: 0px;
+        margin-right: 4px;
+      }
+      .seguirmsc{
+        margin-right: 10px;
+      }
  
   }
 
-@media screen and (min-width:1366px){
-.playerbase{
-    width:800px;
-}
-}
-
-
+  @media screen and (min-width:500px) {
+      .partedomeio{
+        height: auto;
+      }
+      .imgdamusica{
+        display: flex;
+      }
+      .logo2{
+        display: flex;
+      }
+      .imgdamusica{
+        display: none;
+      }
+      .musicaplayer{
+        left:0%;
+        border-radius: 0px;
+        display: flex;
+        flex-wrap: nowrap;
+         width: 99%;
+    }
+    .playerbase{
+          width: 100%;
+        margin-left: 0px;
+    }
+      .voltarmsc{
+        margin-left: 0px;
+        margin-right: 4px;
+      }
+      .seguirmsc{
+        margin-right: 10px;
+      }
  
-  
+  }
+
+  @media screen and (min-width:626px) {
+      .partedomeio{
+        height: auto;
+      }
+         .imgdamusica{
+        display: flex;
+      }
+      .logo2{
+        display: flex;
+      }
+      .imgdamusica{
+        display: none;
+      }
+      .musicaplayer{
+        left:0%;
+        border-radius: 0px;
+        display: flex;
+        flex-wrap: nowrap;
+          width: 99%;
+    }
+    .playerbase{
+   width: 100%;
+        margin-left: 0px;
+    }
+      .voltarmsc{
+        margin-left: 0px;
+        margin-right: 4px;
+      }
+      .seguirmsc{
+        margin-right: 10px;
+      }
+ 
+  }
+@media screen and (min-width:700px) {
+      .partedomeio{
+        height: auto;
+      }
+         .imgdamusica{
+        display: flex;
+      }
+      .logo2{
+        display: flex;
+      }
+      .imgdamusica{
+        display: none;
+      }
+      .musicaplayer{
+        left:0%;
+        border-radius: 0px;
+        display: flex;
+        flex-wrap: nowrap;
+       width: 99%;
+    }
+    .playerbase{
+      width: 100%;
+        margin-left: 0px;
+    }
+      .voltarmsc{
+        margin-left: 0px;
+        margin-right: 4px;
+      }
+      .seguirmsc{
+        margin-right: 10px;
+      }
+ 
+  }
+
+  @media screen and (min-width:900px) {
+      .partedomeio{
+        height: auto;
+      }
+         .imgdamusica{
+        display: flex;
+      }
+      .logo2{
+        display: flex;
+      }
+      .imgdamusica{
+        display: none;
+      }
+      .musicaplayer{
+        left:0%;
+        border-radius: 0px;
+        display: flex;
+        flex-wrap: nowrap;
+           width: 99%;
+    }
+    .playerbase{
+       width: 100%;
+        margin-left: 0px;
+    }
+      .voltarmsc{
+        margin-left: 0px;
+        margin-right: 4px;
+      }
+      .seguirmsc{
+        margin-right: 10px;
+      }
+ 
+  }
+
+
+
+@media screen and (min-width:1366px){
+   .musicaplayer{
+        left:23%;
+        border-radius: 0px;
+        display: flex;
+        flex-wrap: nowrap;
+         width: 50%;
+         border-radius: 40px;
+    }
+     .imgdamusica{
+        display: flex;
+      }
+    .playerbase{
+       width: 100%;
+        margin-left: 0px;
+    }
+      .voltarmsc{
+        margin-left: 0px;
+        margin-right: 4px;
+      }
+      .seguirmsc{
+        margin-right: 10px;
+      }
+}
+
+
+#image1{
+    background-image: url("/imagens/logo-1.jpg");
+    
+}
+#image2{
+    background-image: url("/imagens/logo-2.jpg");
+}
+#image3{
+    background-image: url("/imagens/logo-3.png");
+}
+#image4{
+    background-image: url("/imagens/logo-4.png");
+}
+#image5{
+    background-image: url("/imagens/logo-5.png");
+}
+#image6{
+    background-image: url("/imagens/logo-6.png");
+}
+#image7{
+    background-image: url("/imagens/logo-7.png");
+}
+#image8{
+    background-image: url("/imagens/logo-8.png");
+}
+#image9{
+    background-image: url("/imagens/logo-9.png");
+}
+#image10{
+    background-image: url("/imagens/logo-10.png");
+}
+#image11{
+    background-image: url("/imagens/logo-11.png");
+}
+
+#image12{
+    background-image: url("/imagens/logo-12.png");
+}
+#image13{
+    background-image: url("/imagens/logo-13.png");
+}
+
+#image14{
+    background-image: url("/imagens/logo-14.png");
+}
