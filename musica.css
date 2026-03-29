@@ -74,7 +74,7 @@ body {
     height: 50px;
     border-radius: 50%;
     border: none;
-    background-image: url("/imagens/play-music.png");
+    background-image: url("./imagens/play-music.png");
     cursor: pointer;
     font-size: 20px;
 }
@@ -428,47 +428,47 @@ body {
 
 
 #image1{
-    background-image: url("/imagens/logo-1.jpg");
+    background-image: url("./imagens/logo-1.jpg");
     
 }
 #image2{
-    background-image: url("/imagens/logo-2.jpg");
+    background-image: url("./imagens/logo-2.jpg");
 }
 #image3{
-    background-image: url("/imagens/logo-3.png");
+    background-image: url("./imagens/logo-3.png");
 }
 #image4{
-    background-image: url("/imagens/logo-4.png");
+    background-image: url("./imagens/logo-4.png");
 }
 #image5{
-    background-image: url("/imagens/logo-5.png");
+    background-image: url("./imagens/logo-5.png");
 }
 #image6{
-    background-image: url("/imagens/logo-6.png");
+    background-image: url("./imagens/logo-6.png");
 }
 #image7{
-    background-image: url("/imagens/logo-7.png");
+    background-image: url("./imagens/logo-7.png");
 }
 #image8{
-    background-image: url("/imagens/logo-8.png");
+    background-image: url("./imagens/logo-8.png");
 }
 #image9{
-    background-image: url("/imagens/logo-9.png");
+    background-image: url("./imagens/logo-9.png");
 }
 #image10{
-    background-image: url("/imagens/logo-10.png");
+    background-image: url("./imagens/logo-10.png");
 }
 #image11{
-    background-image: url("/imagens/logo-11.png");
+    background-image: url("./imagens/logo-11.png");
 }
 
 #image12{
-    background-image: url("/imagens/logo-12.png");
+    background-image: url("./imagens/logo-12.png");
 }
 #image13{
-    background-image: url("/imagens/logo-13.png");
+    background-image: url("./imagens/logo-13.png");
 }
 
 #image14{
-    background-image: url("/imagens/logo-14.png");
+    background-image: url("./imagens/logo-14.png");
 }
