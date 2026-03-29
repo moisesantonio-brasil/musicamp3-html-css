@@ -175,7 +175,7 @@ body {
     margin-left: 20px;
     cursor: pointer;
     border: none;
-    background-image: url("/imagens/btn.png");
+    background-image: url("./imagens/btn.png");
     transform: scaleX(-1);
           
 }
@@ -186,7 +186,7 @@ body {
     height: 56px;
        cursor: pointer;
     margin-right: 20px;
-    background-image: url("/imagens/btn.png");
+    background-image: url("./imagens/btn.png");
     
 }
 
